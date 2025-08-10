@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-export default function loadControllers(dir: string): Function[] {
+export function loadControllers(dir: string): Function[] {
   const controllers: Function[] = [];
 
   const files = fs.readdirSync(dir);

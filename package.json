@@ -4,24 +4,31 @@
 	"description": "Express E-commerce Backend API",
 	"main": "app.js.js",
 	"scripts": {
-    "start:dev": "ts-node-dev --respawn --transpile-only src/app.ts",
-    "build": "tsc",
-    "start": "node dist/app.js",
-    "lint": "eslint . --ext .ts",
-    "format": "prettier --write ."
-  },
+		"start:dev": "ts-node-dev --respawn --transpile-only src/app.ts",
+		"build": "tsc",
+		"start": "node dist/app.js",
+		"lint": "eslint . --ext .ts",
+		"format": "prettier --write ."
+	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"type": "commonjs",
 	"dependencies": {
+		"cors": "^2.8.5",
+		"dotenv": "^17.2.1",
 		"express": "^5.1.0",
+		"helmet": "^8.1.0",
+		"morgan": "^1.10.1",
 		"reflect-metadata": "^0.2.2",
 		"routing-controllers": "^0.11.3",
 		"typedi": "^0.10.0"
 	},
 	"devDependencies": {
+		"@types/cors": "^2.8.19",
 		"@types/express": "^5.0.3",
+		"@types/helmet": "^0.0.48",
+		"@types/morgan": "^1.9.10",
 		"@types/node": "^24.2.1",
 		"eslint": "^9.33.0",
 		"eslint-config-prettier": "^10.1.8",

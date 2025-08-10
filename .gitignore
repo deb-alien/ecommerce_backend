@@ -2,3 +2,5 @@ node_modules
 github-branch-plan.md
 project-phases.md
 project.md
+
+.env

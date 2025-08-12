@@ -8,7 +8,6 @@ dotenv.config({ quiet: true });
 @Service()
 export class RedisService {
     private redisClient: Redis;
-    private rateLimiter: RateLimiterRedis;
 
     /**
      * Creates a new Redis client with connection options from environment variables.
